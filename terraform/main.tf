@@ -27,3 +27,7 @@ resource "google_cloudbuild_trigger" "trigger" {
 
   filename = "buildtemplate.yaml"
 }
+
+output "repo-url" {
+  value = google_sourcerepo_repository.repo.url
+}
