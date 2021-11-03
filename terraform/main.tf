@@ -15,4 +15,7 @@ provider "google" {
   zone    = "us-central1-c"
 }
 
+resource "google_sourcerepo_repository" "repo" {
+  name = "github_lgvacanti_ci-cd-gcp-terraform-example"
 
+}
