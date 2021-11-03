@@ -25,6 +25,12 @@ resource "google_cloudbuild_trigger" "trigger" {
     repo_name   = google_sourcerepo_repository.repo.name
   }
 
+  substitutions = {
+    _CLOUD_RUN_NAME = google_cloud_run_service.cloud_run.name
+    _REGION         = "us-central1"
+  }
+
+
   filename = "buildtemplate.yaml"
 }
 
