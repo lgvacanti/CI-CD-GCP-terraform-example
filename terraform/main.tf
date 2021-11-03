@@ -16,6 +16,6 @@ provider "google" {
 }
 
 resource "google_sourcerepo_repository" "repo" {
-  name = "github_lgvacanti_ci-cd-gcp-terraform-example"
-
+  name = "repo"
 }
+
