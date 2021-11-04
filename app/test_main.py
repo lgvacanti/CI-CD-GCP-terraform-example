@@ -1,4 +1,4 @@
 from main import some_function
 
 def test_function():
-    assert some_function(4) == 5
+    assert some_function(4) == 6
