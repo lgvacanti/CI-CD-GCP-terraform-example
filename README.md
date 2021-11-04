@@ -33,3 +33,4 @@ Terraform will output 2 urls. One is the url of your app, the other is the url o
 
 ## Run build from GitHub repository
 You can set a Cloud Source Repository to mirror a GitHub repository, but you can't (yet) do this with Terraform, so if you want to do this you will have to do it manually.
+.
