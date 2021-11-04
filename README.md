@@ -22,6 +22,7 @@ The pipeline:
    - https://console.cloud.google.com/apis/library/cloudbuild.googleapis.com
    - https://console.cloud.google.com/apis/library/run.googleapis.com
    - https://console.cloud.google.com/apis/library/iam.googleapis.com
+   - https://console.cloud.google.com/apis/library/cloudresourcemanager.googleapis.com
 6. Run `terraform init`
 7. Run `terraform apply`
 8. Type `yes` and hit enter.
