@@ -8,7 +8,8 @@ steps:
   args: ["freeze"]
 - name: python
   entrypoint: python
-  args: ["-m", "pytest", "./app"]
+  args: ["-m", "pytest"]
+  dir: "app"
   # Build
 - name: "gcr.io/cloud-builders/docker"
   args:  ["build", "-t", "gcr.io/$PROJECT_ID/myapp", "./app"]
