@@ -2,10 +2,7 @@ steps:
   # Test
 - name: python
   entrypoint: pip
-  args: ["install", "-r", "./app/requirements.txt", "--user"]
-- name: python
-  entrypoint: pip
-  args: ["install", "-U", "pytest"]
+  args: ["install", "-r", "./app/test_requirements.txt", "--user"]
 - name: python
   entrypoint: pip
   args: ["freeze"]
