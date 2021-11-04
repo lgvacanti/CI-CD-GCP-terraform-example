@@ -5,7 +5,10 @@ steps:
   args: ["install", "-r", "./app/requirements.txt", "--user"]
 - name: python
   entrypoint: pip
-  args: ["install", "pytest"]
+  args: ["install", "-U", "pytest"]
+- name: python
+  entrypoint: pip
+  args: ["freeze"]
 - name: python
   entrypoint: python
   args: ["-m", "pytest", "./app"]
